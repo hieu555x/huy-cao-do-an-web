@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.5.1.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/1147679ae7.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
     <title>Ivy-Project</title>
-</head>
-
-<body>
-    <header>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script type="text/javascript" src="jquery.lightbox.js"></script>
+  </head>
+  <body>
+      <header>
         <div class="logo">
-           <a href="index.html"><img src="images/logo.png"></a>
+            <a href="index.html" ><img src="images/logo.png" /></a>
         </div>
         <div class="menu">
             <li>
@@ -108,7 +118,6 @@
             <li>
                 <a href=""><font color="red"><b>SALE</b></font></a>
                 <ul class="sub-menu">
-                    
                     <li><a href="sale50.html">Sale 50%<a /></li>
                     <li><a href="">Sale 60%<a /></li>
                     <li><a href="">Sale 70%<a /></li>
@@ -169,104 +178,75 @@
             <li><a class="fa fa-shopping-bag" href="gio-hang.html"></a></li>
         </div>
     </header>
-    <section id="Slider">
-        <div class="aspect-ratio-169">
-            <a href="index.html"><img src="images/1.jpg" /></a>
-            <img src="images/2.jpg" />
-            <img src="images/3.jpg" />
-            <img src="images/4.jpg" />
-            <img src="images/5.jpg" />
-            <img src="images/6.jpg" />
-            <img src="images/7.jpg" />
-        </div>
-        <div class="dot-container">
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-        </div>
-    </section>
-    <!------------------------------ app-containerr----------------------------------- -->
-    <section class="app-container">
-        <p>Tải ứng dụng IVY moda</p>
-        <div class="app-google">
-            <img src="images/logo.png" />
-            <img src="images/logo.png" />
-        </div>
-        <p>Nhận bản tin IVY moda</p>
-        <input type="text" placeholder="Nhập email của bạn..." />
-    </section>
+    <div class="topnav">
+        <p><a href="index.html">Trang Chủ</a><a href="chinh-sach-thanh-toan.html">Chính sách thanh toán</a></p>
+    </div>
+
+    <!--Main content-->
+    <div class="main fix-main list-main">
+        <h1>CHÍNH SÁCH THANH TOÁN </h1>
+        <br>
+        <hr style="height: 1px;">
+        <br>
+        <p>Có 2 hình thức thanh toán khi mua hàng online tại IVY moda</p>
+        <br>
+        <p class="list"><b>1. Hình thức thu tiền tận nơi (COD)</b> : Khách hàng sẽ thanh toán tiền khi nhận hàng và thanh toán tiền hàng và cước phí vận chuyển cho nhân viên chuyển phát .</p>
+        <p class="list"><b>2. Thanh toán trực tuyến OnePay qua thẻ ATM nội địa hoặc thẻ quốc tế trực tiếp tại website.</b></p>
+        <br>
+        <br>
+        <h1>Q&A</h1>
+        <br>
+        <hr style="height: 1px;">
+        <br>
+        <p class="list"><b>1. Tại sao thẻ tín dụng của tôi có thể bị từ chối?</b></p>
+        <p class="list">Thẻ tín dụng của quý khách có thể bị từ chối vì bất kỳ lý do nào sau đây:</p>
+        <p class="list">Thẻ có thể đã hết hạn. Kiểm tra xem thẻ của quý khách còn hiệu lực không.</p>
+        <p>Quý khách có thể đã đạt đến hạn mức tín dụng. Liên hệ với ngân hàng để kiểm tra xem quý khách có vượt quá giới hạn mua hàng được ủy quyền không.</p>
+        <p> Quý khách có thể đã nhập thông tin nào đó không chính xác. Kiểm tra xem quý khách đã điền đúng tất cả các trường bắt buộc chưa.</p>
+        <p><b>2. Tôi có thể đưa thông tin chi tiết của công ty mình vào hóa đơn không?</b></p>
+        <p class="list">Có. Chỉ cần nhấp vào tùy chọn doanh nghiệp trong thông tin chi tiết cá nhân rồi điền thông tin thuế mà chúng tôi yêu cầu.</p>
+        <p class="list"><b>3. Có an toàn khi sử dụng thẻ tín dụng của tôi trên trang web không?</b></p>
+        <p class="list">Đúng, các dữ liệu được truyền đi bằng cách mã hóa theo giao thức SSL. Đối với việc thanh toán bằng thẻ tín dụng và thẻ ghi nợ, yêu cầu phải nhập số CVV (Card Verification Value, Mã Xác thực Thẻ), là mã số in trên thẻ được sử dụng như một biện pháp bảo mật trong các giao dịch thương mại điện tử.</p>
+        <br>
+        <p class="list"><b>Cảm ơn bạn đã yêu thích sản phẩm và đồng hành cùng IVY moda! Mọi thắc mắc liên quan đến chính sách thanh toán, vui lòng liên hệ 0246.662.3434</b></p>
+    </div>
+
     <!------------------------------ footer----------------------------------- -->
-    <div class="footer-top">
-        <li>
-            <a href=""><img src="images/dathongbao.png" alt="" /></a>
-        </li>
-        <li><a href=""></a>Liên hệ</li> 
-        <li><a href=""></a> Tuyện dụng</li>
-        <li><a href=""></a>Giới thiệu</li>
-        <li>
-            <a href="" class="fab fa-facebook-f"></a>
-            <a href="" class="fab fa-twitter"></a>
-            <a href="" class="fab fa-youtube"></a>
-        </li>
+    <div class="footer">
+        <section class="app-container">
+            <hr>
+            <p>Tải ứng dụng IVY moda</p>
+            <div class="app-google">
+                <img src="images/logo.png" />
+                <img src="images/logo.png" />
+            </div>
+            <p>Nhận bản tin IVY moda</p>
+            <input type="text" placeholder="Nhập email của bạn..." />
+        </section>
+        <div class="footer-top">
+            <li>
+                <a href=""><img src="images/dathongbao.png" alt="" /></a>
+            </li>
+            <li><a href=""></a>Liên hệ</li>
+            <li><a href=""></a> Tuyện dụng</li>
+            <li><a href=""></a>Giới thiệu</li>
+            <li>
+                <a href="" class="fab fa-facebook-f"></a>
+                <a href="" class="fab fa-twitter"></a>
+                <a href="" class="fab fa-youtube"></a>
+            </li>
+        </div>
+        <div class="footer-center">
+            <p>
+                Công ty Cổ phần Dự Kim với số đăng ký kinh doanh: 0105777650 <br />
+                Địa chỉ đăng ký: Tổ dân phố Tháp, P.Đại Mỗ, Q.Nam Từ Liêm, TP.Hà Nội,
+                Việt Nam - 0243 205 2222 <br />
+                Đặt hàng online : <b>0246 662 3434</b> .
+            </p>
+        </div>
+        <div class="footer-bottom">©Ivymoda All rights reserved
+            @Ivymoda All rights reserved
+        </div>
     </div>
-    <div class="footer-center">
-        <p>
-            Công ty Cổ phần Dự Kim với số đăng ký kinh doanh: 0105777650 <br />
-            Địa chỉ đăng ký: Tổ dân phố Tháp, P.Đại Mỗ, Q.Nam Từ Liêm, TP.Hà Nội,
-            Việt Nam - 0243 205 2222 <br />
-            Đặt hàng online : <b>0246 662 3434</b> .
-        </p>
-    </div>
-    <div class="footer-bottom">©Ivymoda All rights reserved
-        @Ivymoda All rights reserved
-    </div>
-</body>
-    <script>
-        const header = document.querySelector("header")
-        window.addEventListener("scroll", function () {
-            x = window.pageYOffset
-            if (x > 0) {
-                header.classList.add("sticky")
-            }
-            else {
-                header.classList.remove("sticky")
-            }
-        })
-        const imgPosition = document.querySelectorAll(".aspect-ratio-169 img")
-        const imgContainer = document.querySelector(".aspect-ratio-169")
-        const dotItem = document.querySelectorAll(".dot")
-        let imgNuber = imgPosition.length
-        let index = 0
-        // console.log(imgPosition)
-        imgPosition.forEach(function (image, index) {
-            image.style.left = index * 100 + "%"
-            dotItem[index].addEventListener("click", function () {
-                slider(index)
-            })
-
-        })
-        function imgSlide() {
-            index++;
-            console.log(index)
-            if (index >= imgNuber) { index = 0 }
-            slider(index)
-
-        }
-        function slider(index) {
-            imgContainer.style.left = "-" + index * 100 + "%"
-            const dotActive = document.querySelector(".active")
-            dotActive.classList.remove("active")
-            dotItem[index].classList.add("active")
-
-        }
-
-        setInterval(imgSlide, 2000)
-
-
-    </script>
-
+  </body>
 </html>

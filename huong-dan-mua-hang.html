@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.5.1.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/1147679ae7.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
     <title>Ivy-Project</title>
-</head>
-
-<body>
-    <header>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script type="text/javascript" src="jquery.lightbox.js"></script>
+  </head>
+  <body>
+      <header>
         <div class="logo">
-           <a href="index.html"><img src="images/logo.png"></a>
+            <a href="index.html" ><img src="images/logo.png" /></a>
         </div>
         <div class="menu">
             <li>
@@ -108,7 +118,6 @@
             <li>
                 <a href=""><font color="red"><b>SALE</b></font></a>
                 <ul class="sub-menu">
-                    
                     <li><a href="sale50.html">Sale 50%<a /></li>
                     <li><a href="">Sale 60%<a /></li>
                     <li><a href="">Sale 70%<a /></li>
@@ -169,104 +178,65 @@
             <li><a class="fa fa-shopping-bag" href="gio-hang.html"></a></li>
         </div>
     </header>
-    <section id="Slider">
-        <div class="aspect-ratio-169">
-            <a href="index.html"><img src="images/1.jpg" /></a>
-            <img src="images/2.jpg" />
-            <img src="images/3.jpg" />
-            <img src="images/4.jpg" />
-            <img src="images/5.jpg" />
-            <img src="images/6.jpg" />
-            <img src="images/7.jpg" />
-        </div>
-        <div class="dot-container">
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-        </div>
-    </section>
-    <!------------------------------ app-containerr----------------------------------- -->
-    <section class="app-container">
-        <p>Tải ứng dụng IVY moda</p>
-        <div class="app-google">
-            <img src="images/logo.png" />
-            <img src="images/logo.png" />
-        </div>
-        <p>Nhận bản tin IVY moda</p>
-        <input type="text" placeholder="Nhập email của bạn..." />
-    </section>
+    <div class="topnav">
+        <p><a href="index.html">Trang Chủ</a><a href="huong-dan-mua-hang.html">Hướng dẫn mua hàng</a></p>
+    </div>
+
+    <!--Main content-->
+    <div class="main fix-main list-main">
+        <h1>HƯỚNG DẪN MUA HÀNG</h1>
+        <br>
+        <hr style="height: 1px;">
+        <br>
+        <h5>Mua sắm tại IVY moda thật dễ dàng. Quý khách chỉ cần làm theo các bước sau:</h5>
+        <br>
+        <ol>
+            <li class="list">Chọn dòng sản phẩm (Nam/ Nữ/ Sale) rồi chọn chủng loại sản phẩm (áo sơ mi, áo thun, đầm,..)</li>
+            <li class="list">Xem sản phẩm quý khách quan tâm rồi nhấp vào ảnh để phóng to và xem mọi chi tiết, kích cỡ hiện có, thành phần, mã tham chiếu và giá.</li>
+            <li class="list">Chọn mặt hàng và thêm mặt hàng vào giỏ. Sau đó, quý khách có thể chọn tiếp tục mua sắm hoặc xử lý đơn hàng.</li>
+            <li class="list">Nếu muốn xử lý đơn hàng, quý khách có thể thực hiện bằng cách đăng ký hoặc thanh toán với tư cách khách hàng mới.</li>
+            <li class="list">Chọn phương thức giao hàng.</li>
+            <li class="list">Chọn phương thức thanh toán.</li>
+            <li class="list">Xác nhận đơn hàng: Quý khách sẽ nhận được email xác nhận đơn hàng.</li>
+        </ol>
+    </div>
+
     <!------------------------------ footer----------------------------------- -->
-    <div class="footer-top">
-        <li>
-            <a href=""><img src="images/dathongbao.png" alt="" /></a>
-        </li>
-        <li><a href=""></a>Liên hệ</li> 
-        <li><a href=""></a> Tuyện dụng</li>
-        <li><a href=""></a>Giới thiệu</li>
-        <li>
-            <a href="" class="fab fa-facebook-f"></a>
-            <a href="" class="fab fa-twitter"></a>
-            <a href="" class="fab fa-youtube"></a>
-        </li>
+    <div class="footer">
+        <section class="app-container">
+            <hr>
+            <p>Tải ứng dụng IVY moda</p>
+            <div class="app-google">
+                <img src="images/logo.png" />
+                <img src="images/logo.png" />
+            </div>
+            <p>Nhận bản tin IVY moda</p>
+            <input type="text" placeholder="Nhập email của bạn..." />
+        </section>
+        <div class="footer-top">
+            <li>
+                <a href=""><img src="images/dathongbao.png" alt="" /></a>
+            </li>
+            <li><a href=""></a>Liên hệ</li>
+            <li><a href=""></a> Tuyện dụng</li>
+            <li><a href=""></a>Giới thiệu</li>
+            <li>
+                <a href="" class="fab fa-facebook-f"></a>
+                <a href="" class="fab fa-twitter"></a>
+                <a href="" class="fab fa-youtube"></a>
+            </li>
+        </div>
+        <div class="footer-center">
+            <p>
+                Công ty Cổ phần Dự Kim với số đăng ký kinh doanh: 0105777650 <br />
+                Địa chỉ đăng ký: Tổ dân phố Tháp, P.Đại Mỗ, Q.Nam Từ Liêm, TP.Hà Nội,
+                Việt Nam - 0243 205 2222 <br />
+                Đặt hàng online : <b>0246 662 3434</b> .
+            </p>
+        </div>
+        <div class="footer-bottom">©Ivymoda All rights reserved
+            @Ivymoda All rights reserved
+        </div>
     </div>
-    <div class="footer-center">
-        <p>
-            Công ty Cổ phần Dự Kim với số đăng ký kinh doanh: 0105777650 <br />
-            Địa chỉ đăng ký: Tổ dân phố Tháp, P.Đại Mỗ, Q.Nam Từ Liêm, TP.Hà Nội,
-            Việt Nam - 0243 205 2222 <br />
-            Đặt hàng online : <b>0246 662 3434</b> .
-        </p>
-    </div>
-    <div class="footer-bottom">©Ivymoda All rights reserved
-        @Ivymoda All rights reserved
-    </div>
-</body>
-    <script>
-        const header = document.querySelector("header")
-        window.addEventListener("scroll", function () {
-            x = window.pageYOffset
-            if (x > 0) {
-                header.classList.add("sticky")
-            }
-            else {
-                header.classList.remove("sticky")
-            }
-        })
-        const imgPosition = document.querySelectorAll(".aspect-ratio-169 img")
-        const imgContainer = document.querySelector(".aspect-ratio-169")
-        const dotItem = document.querySelectorAll(".dot")
-        let imgNuber = imgPosition.length
-        let index = 0
-        // console.log(imgPosition)
-        imgPosition.forEach(function (image, index) {
-            image.style.left = index * 100 + "%"
-            dotItem[index].addEventListener("click", function () {
-                slider(index)
-            })
-
-        })
-        function imgSlide() {
-            index++;
-            console.log(index)
-            if (index >= imgNuber) { index = 0 }
-            slider(index)
-
-        }
-        function slider(index) {
-            imgContainer.style.left = "-" + index * 100 + "%"
-            const dotActive = document.querySelector(".active")
-            dotActive.classList.remove("active")
-            dotItem[index].classList.add("active")
-
-        }
-
-        setInterval(imgSlide, 2000)
-
-
-    </script>
-
+  </body>
 </html>
