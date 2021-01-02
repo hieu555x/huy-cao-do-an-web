@@ -568,3 +568,10 @@ input:focus {
   color: black;
   border: 1px solid black;
 }
+.hinhanh {
+  text-align: center;
+}
+.hinhanh img {
+  width: 50%;
+  margin-bottom: 2%;
+}
