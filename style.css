@@ -1,0 +1,498 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 40px;
+  height: 70px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.3);
+  max-width: 1600px;
+  margin: auto;
+}
+header.sticky {
+  background: rgb(255, 255, 255);
+}
+header:hover {
+  background: rgba(255, 255, 255, 1);
+}
+.logo {
+  flex: 1;
+}
+.menu {
+  flex: 3;
+  display: flex;
+}
+.menu > li {
+  padding: 0 12px;
+  position: relative;
+}
+.menu > li:hover .sub-menu {
+  visibility: visible;
+  top: 45px;
+}
+.sub-menu {
+  position: absolute;
+  width: 190px;
+  border: 1px solid #ccc;
+  padding: 10px 0 10px 20px;
+  visibility: hidden;
+  top: 60px;
+  transition: 0.3s;
+  z-index: 1;
+  background: #fff;
+  margin-top: -15px;
+}
+.sub-menu ul {
+  padding-left: 20px;
+}
+.sub-menu li ul a {
+  font-weight: normal;
+  font-size: 12px;
+}
+.menu li a {
+  font-size: 12px;
+  display: block;
+  line-height: 20px;
+}
+.menu li a:hover {
+  opacity: 0.7;
+}
+.menu li li a:hover {
+  background-color: rgb(245, 245, 245);
+  opacity: 1;
+}
+.others {
+  flex: 1;
+  display: flex;
+}
+.others > li {
+  padding: 0 12px;
+  position: relative;
+}
+.others > li::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 50%;
+  background: #dddddd;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.others > li:last-child::after {
+  display: none;
+}
+.others > li:first-child {
+  position: relative;
+}
+.others > li:first-child input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #333;
+  background: transparent;
+  outline: none;
+}
+
+.others > li:first-child i {
+  position: absolute;
+  right: 10px;
+}
+#Slider {
+  padding-bottom: 30px;
+  border-bottom: 2px solid #000;
+  overflow: hidden;
+}
+.aspect-ratio-169 {
+  display: block;
+  position: relative;
+  padding-top: 56.25%;
+  transition: 0.3s;
+}
+
+.aspect-ratio-169 img {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.dot-container {
+  position: absolute;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.dot {
+  height: 16px;
+  width: 16px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.dot.active {
+  background-color: #333;
+}
+/*------------------------------- app--------------------------------------- */
+.app-container {
+  text-align: center;
+  align-items: center;
+  padding: 150px 0 50px 0;
+}
+.app-google {
+  margin: 50px;
+}
+.app-google img {
+  height: 50px;
+  cursor: pointer;
+}
+.app-container p {
+  line-height: 20px;
+  letter-spacing: 1px;
+  font-size: 17px;
+  color: #000;
+  font-weight: bold;
+}
+.app-container input {
+  margin-top: 50px;
+  border: none;
+  border-bottom: 1px solid #000;
+  padding-bottom: 20px;
+  width: 400px;
+  text-align: center;
+  outline: none;
+}
+/*------------------------------- footer--------------------------------------- */
+footer {
+  text-align: center;
+}
+.footer-top {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 70px;
+}
+.footer-top img {
+  height: 50px;
+}
+.footer-top li {
+  padding: 0 12px;
+  position: relative;
+}
+.footer-top li::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 80%;
+  background: #cccccc;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.footer-top li:last-child::after {
+  display: none;
+}
+.footer-top li:last-child a {
+  margin-right: 12px;
+  color: #333;
+}
+.footer-center {
+  text-align: center;
+}
+.footer-bottom {
+  margin: 20px 0;
+  text-align: center;
+}
+/* =================================================================
+*/
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  margin-top: 80px;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: gray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a {
+  font-size: 12px;
+  margin-left: 20px;
+}
+.main {
+  margin-top: 2%;
+}
+.fix-main {
+  margin: 2% 5%;
+}
+.list-main ul li {
+  list-style-type: disc;
+  margin-left: 2%;
+}
+.list-main {
+  font-size: 14px;
+}
+.list-main ol li {
+  list-style-type: decimal;
+  margin-left: 2%;
+}
+.footer {
+  width: 100%;
+  float: left;
+  clear: left;
+}
+.sub-main-content {
+  width: 20%;
+  background-color: white;
+  float: left;
+}
+.main-content {
+  width: 100%;
+  background-color: white;
+  float: left;
+  max-width: 1080px;
+  margin: auto;
+}
+hr {
+  background-color: black;
+  height: 3px;
+}
+.text {
+  margin-left: 20%;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.sub-text {
+  margin-left: 25%;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+}
+.fix-sub-text {
+  font-weight: normal;
+  line-height: normal;
+}
+.sub-text:hover {
+  text-decoration: underline;
+}
+.fix-sub-text:hover {
+  text-decoration: none;
+}
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.col-4 {
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+}
+.col-4 img {
+  width: 100%;
+}
+.col-4 p {
+  text-align: center;
+}
+.page-btn {
+  margin: 0 auto;
+}
+.page-btn span {
+  display: inline-block;
+  border: 1px solid white;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+.page-btn span:hover {
+  background: white;
+  color: black;
+}
+.row-2 {
+  justify-content: space-between;
+}
+select {
+  border: 1px solid black;
+  padding: 5px;
+  padding-right: 80px;
+}
+select:focus {
+  outline: none;
+}
+.col-2 {
+  flex-basis: 50%;
+  min-width: 300xp;
+}
+.col-2 img {
+  max-width: 100%;
+  padding: 50px 0;
+}
+.single-product {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 0px;
+}
+.single-product .col-2 img {
+  padding: 0;
+}
+.single-product .col-2 {
+  padding: 20px;
+}
+.single-product select {
+  display: block;
+  padding: 10px;
+  margin-top: 20px;
+}
+input:focus {
+  outline: none;
+}
+.single-product .fa {
+  color: #ff523b;
+  margin-left: 10px;
+}
+.small-img-row {
+  display: flex;
+  justify-content: space-between;
+}
+.small-img-rol {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+.col-2 .so-luong {
+  width: 10%;
+}
+.col-2 .muahang {
+  background-color: white;
+  border: 2px solid black;
+  font-size: 18px;
+  padding: 5px 40px;
+}
+.col-2 .muahang:hover {
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+}
+.col-2 .tim {
+  background-color: white;
+  border: 2px solid #fa9f36;
+  font-size: 18px;
+  padding: 5px 10px;
+  color: #fa9f36;
+}
+.col-2 .tim:hover {
+  background-color: #fa9f36;
+  border: 2px solid white;
+  color: white;
+}
+
+/* Tab Links */
+.tabs {
+  display: flex;
+}
+.tablinks {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 1rem;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: 0.2s ease;
+  background-color: white;
+}
+.tablinks:hover {
+  color: gray;
+  border-bottom: 1px solid black;
+}
+/* Tab active */
+.tablinks.active {
+  color: black;
+}
+
+/* tab content */
+.tabcontent {
+  display: none;
+}
+/* Text*/
+.tabcontent p {
+  color: #333;
+  font-size: 16px;
+}
+/* tab content active */
+.tabcontent.active {
+  display: block;
+}
+@media only screen and (max-width: 600px) {
+  .row {
+    text-align: center;
+  }
+  .col-2,
+  .col-3,
+  .col-4 {
+    flex-basis: 100%;
+  }
+  .single-product .row {
+    text-align: left;
+  }
+  .single-product .col-2 {
+    padding: 20px 0;
+  }
+  .single-product h1 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .cart-info p {
+    display: none;
+  }
+}
+.size-1 {
+  font-size: 20px;
+}
+.tuvan-img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
